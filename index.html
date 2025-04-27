@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="./assets/images/avatar2.png"
+        type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container">
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links (Centered and larger) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main"><span data-bs-toggle="collapse" data-bs-target="#navbarNav">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><span data-bs-toggle="collapse" data-bs-target="#navbarNav">About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"><span data-bs-toggle="collapse" data-bs-target="#navbarNav">Skills</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio"><span data-bs-toggle="collapse" data-bs-target="#navbarNav">Projects</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><span data-bs-toggle="collapse" data-bs-target="#navbarNav">Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- MAIN -->
+    <section id="main" class="min-vh-100 d-flex align-items-center text-center">
+        <div id="app" class="container">  <div class="row">
+                <div class="col-12">
+                    <h1 class="text-uppercase fw-semibold display-1 text-white" data-aos="fade-right">
+                        {{ title }}  </h1>
+                    <h5 class="text-white mt-4 mb-2 " data-aos="fade-left">
+                        Mohammed Jawwad Rayan
+                    </h5><br>
+                    <div data-aos="fade-up">
+                        <a href="#about" class="btn btn-brand me-2">Get Started</a>
+                        <a href="#contact" class="btn btn-light ms-2">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold" data-aos="fade-down" data-aos-delay="50">About</h1>
+                        <div class="line"></div>
+                        <p class="fw-semibold" data-aos="fade-down" data-aos-delay="200">I'm a full-time front-end developer dedicated to crafting seamless, engaging digital experiences.
+                             I specialize in building responsive, high-performance websites that not only reflect your brand's identity but also deliver intuitive user interactions. 
+                            My work combines clean code, modern design principles, and a passion for detail to create meaningful connections between brands and their audiences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-3" data-aos="fade-right" data-aos-delay="500">
+                    <img src="./assets/images/prof.jpeg" alt="">
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="500">
+                    <h1 class="mt-4">I am &nbspRAYAN</h1>
+                    
+                    <div class="d-flex mt-4 mb-3">
+                        <div class="iconbox me-4">
+                            <i class="ri-user-smile-fill"></i>
+                        </div>
+                        <div>
+                            <p class="fw-semibold">I am 21 years old and currently based in Bangalore, India
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="iconbox me-4">
+                            <i class="ri-school-fill"></i>
+                        </div>
+                        <div>
+                            <p class="fw-semibold">I have a Bacholers in Computer Science and Engineering from Presidency University Bangalore
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="iconbox me-4">
+                            <i class=" ri-user-fill"></i>
+                        </div>
+                        <div>
+                            <p class="fw-semibold">Outside of coding, I enjoy exploring UI design trends, listening to music, and working on personal side projects that spark creativity.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="skills" class="section-padding border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold" data-aos="fade-up" data-aos-delay="50">My skills</h1>
+                        <div class="line"></div>
+                        <p class="fw-semibold" data-aos="fade-down" data-aos-delay="50">As a front-end developer, I specialize in translating complex design concepts into fully responsive, 
+                            high-performance interfaces. With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, 
+                            I focus on building pixel-perfect web experiences that are optimized for both usability and performance. 
+                            My skillset is driven by a passion for clean code, intuitive UI/UX, and continuous learning in the evolving world of front-end technologies.
+
+                            .
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 text-center">
+                <!-- HTML5 -->
+                <div class="col-lg-4 col-sm-6 text-center" data-aos="flip-left" data-aos-duration="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="60">
+                        <h5 class="pt-3">HTML5</h5>
+                    </div>
+                </div>
+            
+                <!-- CSS3 -->
+                <div class="col-lg-4 col-sm-6 text-center" data-aos="flip-down" data-aos-duration="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="60">
+                        <h5 class="pt-3">CSS3</h5>
+                    </div>
+                </div>
+            
+                <!-- JavaScript -->
+                <div class="col-lg-4 col-sm-6 text-center" data-aos="flip-right" data-aos-duration="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="60">
+                        <h5 class="pt-3">JavaScript</h5>
+                    </div>
+                </div>
+            
+                <!-- React -->
+                <div class="col-lg-4 col-sm-6 text-center" data-aos="flip-left" data-aos-duration="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="60">
+                        <h5 class="pt-3">React</h5>
+                    </div>
+                </div>
+            
+                <!-- Node.js -->
+                <div class="col-lg-4 col-sm-6 text-center" data-aos="flip-up" data-aos-duration="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="60">
+                        <h5 class="pt-3">Node.js</h5>
+                    </div>
+                </div>
+            
+                <!-- Bootstrap -->
+                <div class="col-lg-4 col-sm-6 text-center" data-aos="flip-right" data-aos-duration="250">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="60">
+                        <h5 class="pt-3">Bootstrap</h5>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- COUNTER -->
+    <div id="counter" class="section-padding border-top">
+        <div class="container">
+            <div class="row text-center g-5">
+                <div class="col-lg-4 col-sm-4" data-aos="zoom-out-down">
+                    <h1 class="text-white display-3">100+</h1>
+                    <h6 class="text-uppercase mt-2 text-white mb-0">Total Downloads</h6>
+                </div>
+                <div class="col-lg-4 col-sm-4" data-aos="zoom-out-down">
+                    <h1 class="text-white display-3">10+</h1>
+                    <h6 class="text-uppercase mt-2 text-white mb-0">Trusted Clients</h6>
+                </div>
+                <div class="col-lg-4 col-sm-4" data-aos="zoom-out-down">
+                    <h1 class="text-white display-3">100+</h1>
+                    <h6 class="text-uppercase mt-2 text-white mb-0">Themes Designed</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT GALLERY -->
+<section id="portfolio" class="section-padding bg-light">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="display-4 fw-semibold" data-aos="fade-up">Project Gallery</h1>
+                <div class="line mx-auto"></div>
+                <p class="mt-3" data-aos="fade-down">
+                    A showcase of web projects and UI themes I’ve developed — from modern landing pages to interactive dashboards.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="./assets/images/e co.png" class="img-fluid rounded" alt="Project 2">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">E-commerce UI</h5>
+                        <p class="text-muted small">React, TailwindCSS</p>
+                        <a href="./assets/images/e co.png" data-fancybox="gallery" class="btn btn-sm btn-outline-primary mt-2">
+                            View Fullscreen <i class="ri-search-line ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="image-zoom-wrapper">
+                        <img src="./assets/images/cvc.webp" class="img-fluid rounded" alt="Project 1">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Personalised Portfolio</h5>
+                        <p class="text-muted small">HTML, CSS, Bootstrap</p>
+                        <a href="./assets/images/cvc.webp" data-fancybox="gallery" class="btn btn-sm btn-outline-primary mt-2">
+                            View Fullscreen <i class="ri-search-line ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="card border-0 shadow-sm h-100">
+                    <img src="./assets/images/dash.png" class="img-fluid rounded" alt="Project 3">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Analytics Dashboard</h5>
+                        <p class="text-muted small">JavaScript, Chart.js</p>
+                        <a href="./assets/images/dash.png" data-fancybox="gallery" class="btn btn-sm btn-outline-primary mt-2">
+                            View Fullscreen <i class="ri-search-line ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>     
+            <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="image-zoom-wrapper">
+                        <img src="./assets/images/maps.webp" class="img-fluid rounded" alt="Project 1">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">map navigational UI</h5>
+                        <p class="text-muted small">HTML, CSS, Vue.js</p>
+                        <a href="./assets/images/maps.webp" data-fancybox="gallery" class="btn btn-sm btn-outline-primary mt-2">
+                            View Fullscreen <i class="ri-search-line ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>   <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="image-zoom-wrapper">
+                        <img src="./assets/images/pro.webp" class="img-fluid rounded" alt="Project 1">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Product Landing UI</h5>
+                        <p class="text-muted small">Grunt, SVG, Figma</p>
+                        <a href="./assets/images/pro.webp" data-fancybox="gallery" class="btn btn-sm btn-outline-primary mt-2">
+                            View Fullscreen <i class="ri-search-line ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>   <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="image-zoom-wrapper">
+                        <img src="./assets/images/stre.webp" class="img-fluid rounded" alt="Project 1">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Streaming Dashboard</h5>
+                        <p class="text-muted small">HTML, CSS, Bootstrap</p>
+                        <a href="./assets/images/stre.webp" data-fancybox="gallery" class="btn btn-sm btn-outline-primary mt-2">
+                            View Fullscreen <i class="ri-search-line ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact" class="section-padding border-top">
+    <div class="container">
+        <div class="row mb-5 text-center">
+            <div class="col-12">
+                <h1 class="display-4 fw-semibold" data-aos="fade-up">Contact</h1>
+                <div class="line mx-auto"></div>
+                <p class="mt-3 fw-semibold text-white" data-aos="fade-down">
+                    Have a project in mind or just want to say hello? Let’s connect!
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up">
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="bg-white p-4 rounded shadow-sm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-semibold">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold">Email</label>
+                        <input type="email" class="form-control" id="email" name="_replyto" required placeholder="you@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label fw-semibold">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label fw-semibold">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-brand">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer style="background-color: rgba(0, 0, 0, 0.938);">
+        <div class="footer-top text-center">
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="social-icons mt-3">
+                            <div class="social" style="margin-right: 10px;">
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                            <div class="social" style="margin-right: 10px;">
+                                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                            </div>
+                            <div class="social">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <div class="social" style="margin-left: 10px;">
+                                <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            </div>
+                            <div class="social" style="margin-left: 10px;">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="footerline"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto mb-2">
+                        <p class="mb-0"><i class="ri-copyright-line"></i>Copyright. All Rights Reserved</p>
+                    </div>
+                    <div class="col-auto mb-2">
+                        <p class="mb-0">Designed by <a href="#">RAYAN</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://kit.fontawesome.com/5c1ec7558a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    const { createApp } = Vue
+
+    createApp({
+        data() {
+            return {
+                title: 'Welcome to my portfolio'  //  Vue data
+            }
+        }
+    }).mount('#app')
+</script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
